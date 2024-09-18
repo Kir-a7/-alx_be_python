@@ -1,4 +1,4 @@
-current_weather = input ("What's the weather like today? (sunny/rainy/cold): ").lower()
+current_weather = input ("What's the weather like today? (sunny/rainy/cold): ")
 
 match current_weather:
     case "sunny":
