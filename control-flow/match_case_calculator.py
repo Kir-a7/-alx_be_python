@@ -5,17 +5,17 @@ operation = input("Choose the operation (+, -, *, /):")
 
 match operation:
     case "+":
-        sum = num1 + num2
-        print(f"result is {sum}")
+        result = num1 + num2
+        print(f"result is {result}")
     case "-":
-        sub = num1-num2
-        print(f"result is {sub}")
+        result = num1-num2
+        print(f"result is {result}")
     case "*":
-        mul = num1*num2
-        print(f" result is{mul}")
+        reslut = num1*num2
+        print(f" result is{result}")
     case "/": 
         if num2 != 0:
-            div = num1/num2
-            print(f"reslut is {div}")
+            result = num1/num2
+            print(f"reslut is {result}")
         else:
             print("Cannot divide by Zero.")
