@@ -11,13 +11,14 @@ def convert_to_fahrenheit(celsius):
     print(f"{celsius}°C is {fahrenheit_value}°F")
 
 
-temp = float(input("Enter the temperature to convert: "))
-cel_or_fah = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").lower()
+try:
+    temp = float(input("Enter the temperature to convert: "))
+    cel_or_fah = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").lower()
+    
+    if cel_or_fah == "c":
+        convert_to_fahrenheit(celsius = temp)
+    elif cel_or_fah == "f":
+        convert_to_celsius(fahrenheit = temp)
 
-
-if cel_or_fah == "c":
-    convert_to_fahrenheit(celsius = temp)
-elif cel_or_fah == "f":
-    convert_to_celsius(fahrenheit = temp)
-else:
-    print("Invalid Input")
+except ValueError:
+    print("Please enter a valid numeric temperature.")
