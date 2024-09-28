@@ -21,4 +21,4 @@ try:
         convert_to_celsius(fahrenheit = temp)
 
 except ValueError:
-    print("Please enter a valid numeric temperature.")
+    print("Invalid temperature. Please enter a numeric value.")
